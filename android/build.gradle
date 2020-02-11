@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 28
     buildToolsVersion '28.0.3'
 
     defaultConfig {
@@ -42,11 +42,5 @@ repositories {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-//    compile 'com.facebook.react:react-native:+'
-    implementation('com.facebook.react:react-native:+') {
-        exclude group: 'okhttp'
-        exclude group: 'okio'
-    }
-
-
+    compileOnly "com.facebook.react:react-native:+"
 }
