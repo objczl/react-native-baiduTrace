@@ -9,7 +9,7 @@
 #import "RCTRootView.h"
 #import "RCTBridge.h"
 #endif
-#import "RCTJPushEventQueue.h"
+
 @interface RNBaiduTrace : RCTEventEmitter <RCTBridgeModule>
 
 @end
